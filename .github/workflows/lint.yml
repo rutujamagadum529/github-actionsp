@@ -1,21 +1,19 @@
-#This code is a from here linting
-#heloo this is a simple file
-name : Auto Linter
+# This code is for linting
+# Hello, this is a simple file
 
+name: Auto Linter
 
-on: 
+on:
   push:
-    paths: "*.py"
-
+    paths:
+      - "*.py"
 
 jobs:
   code:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout/clone the code
-        uses: actions/checkout@v7
+        uses: actions/checkout@v4
 
       - name: Install Linter
         run: pip install ruff
-      
-      
