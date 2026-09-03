@@ -1,4 +1,5 @@
 #this is a code linting
+#hello
 name: Auto Linter
 
 on:
